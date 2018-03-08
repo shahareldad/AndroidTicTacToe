@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="load">Load last game</string>
+    <string name="settings">Game settings</string>
+    <string name="playSounds">Play sounds</string>
+    <string name="confimOnExit">Confirm Exit</string>
+    <string name="okButton">OK</string>
+</resources>
