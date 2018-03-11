@@ -26,8 +26,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String LevelParamName = "level";
-    public static String LoadGameParamName = "loadGame";
+    public static String AgainstComputerParamName = "AgainstComputer";
     public static String SETTINGS_FILENAME = "SUDOKU_SETTINGS";
     private SettingsData _settings;
 
@@ -46,29 +45,21 @@ public class MainActivity extends AppCompatActivity {
         AdRequest requestBottom = new AdRequest.Builder().build();
         adViewBottom.loadAd(requestBottom);
 
-        Button easyBtn = findViewById(R.id.easyGame);
-        Button mediumBtn = findViewById(R.id.mediumGame);
-        Button loadGame = findViewById(R.id.loadGame);
+        Button humanBtn = findViewById(R.id.humanPlayer);
+        Button computerBtn = findViewById(R.id.computerPlayer);
         Button gameSettings = findViewById(R.id.gameSettings);
 
-        easyBtn.setOnClickListener(new View.OnClickListener() {
+        humanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startNewGameByLevel(1, false);
+                startNewGameByLevel(1);
             }
         });
 
-        mediumBtn.setOnClickListener(new View.OnClickListener() {
+        computerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startNewGameByLevel(2, false);
-            }
-        });
-
-        loadGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startNewGameByLevel(1, true);
+                startNewGameByLevel(2);
             }
         });
 
@@ -87,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setTitle(R.string.settings);
                 final String[] items = new String[]{
                         getString(R.string.playSounds),
-                        getString(R.string.confimOnExit)
+                        getString(R.string.confirmOnExit)
                 };
                 builder.setMultiChoiceItems(items, checked, new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
@@ -182,15 +173,14 @@ public class MainActivity extends AppCompatActivity {
         if (selection.equals(getString(R.string.playSounds))){
             settings.setPlaySound(isChecked);
         }
-        if (selection.equals(getString(R.string.confimOnExit))){
+        if (selection.equals(getString(R.string.confirmOnExit))){
             settings.setConfirmExit(isChecked);
         }
     }
 
-    private void startNewGameByLevel(int level, boolean loadGame) {
+    private void startNewGameByLevel(int level) {
         Intent i = new Intent(MainActivity.this, BoardActivity.class);
-        i.putExtra(LevelParamName, level);
-        i.putExtra(LoadGameParamName, loadGame);
+        i.putExtra(AgainstComputerParamName, level);
         startActivity(i);
     }
 }

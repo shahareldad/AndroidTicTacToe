@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
-    <string name="easy">Easy</string>
-    <string name="medium">Medium</string>
+    <string name="humanPlayer">Human Player</string>
+    <string name="computerPlayer">Computer Player</string>
     <string name="load">Load last game</string>
     <string name="settings">Game settings</string>
     <string name="playSounds">Play sounds</string>
-    <string name="confimOnExit">Confirm Exit</string>
+    <string name="confirmOnExit">Confirm Exit</string>
     <string name="okButton">OK</string>
+    <string name="backButton">Back</string>
+    <string name="gameOver">Game Over</string>
+    <string name="newGame">New Game</string>
 </resources>

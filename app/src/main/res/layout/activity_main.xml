@@ -13,18 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/easyGame"
+            android:id="@+id/humanPlayer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
-            android:text="@string/easy"/>
+            android:text="@string/humanPlayer"/>
 
         <Button
-            android:id="@+id/mediumGame"
+            android:id="@+id/computerPlayer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
-            android:text="@string/medium"/>
+            android:text="@string/computerPlayer"/>
     </LinearLayout>
 
     <Button
