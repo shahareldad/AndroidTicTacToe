@@ -28,6 +28,8 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     private int _screenWidth;
     private int _cellSide;
     private int _level = 1;
+    private TextView _XPlayerScore;
+    private TextView _OPlayerScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
         _level = getIntent().getIntExtra(MainActivity.ComputerPlayerLevel, 1);
         _mainGridLayout = findViewById(R.id.mainGridLayout);
         setupGame();
+        resetScore();
 
         Button newGameButton = findViewById(R.id.newGameButton);
         newGameButton.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +64,11 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+
+        TextView cell = (TextView)view;
+        String textViewText = String.valueOf(cell.getText());
+        if (!textViewText.equals(""))
+            return;
 
         makeMove(view);
 
@@ -116,6 +124,15 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
         setupTextViews();
     }
 
+    private void resetScore() {
+        if (_XPlayerScore == null)
+            _XPlayerScore = findViewById(R.id.XPlayerScore);
+        _XPlayerScore.setText("0");
+        if (_OPlayerScore == null)
+            _OPlayerScore = findViewById(R.id.OPlayerScore);
+        _OPlayerScore.setText("0");
+    }
+
     private void setupGameBoard() {
         for(int index = 0; index < GameMain.ROWS; index++){
             _gameBoard[0][index] = 0;
@@ -143,6 +160,8 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void showWinLossDialog() {
+        updateScoreForWinner();
+
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         _currentPlayer = !_currentPlayer;
         String winningPlayer = _currentPlayer ? "X" : "O";
@@ -167,6 +186,14 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
         });
 
         builder.create().show();
+    }
+
+    private void updateScoreForWinner() {
+        // remark: in method make move the last step is to reverse the
+        // current player so here we make a reverse check
+        TextView scoreTextToUpdate = !_currentPlayer ? _XPlayerScore : _OPlayerScore;
+        int currentScore = Integer.valueOf(String.valueOf(scoreTextToUpdate.getText())) + 1;
+        scoreTextToUpdate.setText(String.valueOf(currentScore));
     }
 
     private void showTieDialog() {

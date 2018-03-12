@@ -11,4 +11,6 @@
     <string name="gameOver">Game Over</string>
     <string name="newGame">New Game</string>
     <string name="playerWon">Player [PLAYERNAME] won</string>
+    <string name="playerX"><u>Player X</u></string>
+    <string name="playerO"><u>Player O</u></string>
 </resources>
