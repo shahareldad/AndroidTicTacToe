@@ -18,12 +18,14 @@ import java.util.Arrays;
 
 public class BoardActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private int _movesCounter = 9;
     private GridLayout _mainGridLayout;
     private boolean _currentPlayer = true; // true => X, false => O
     private int[][] _gameBoard = new int[3][3]; // 0 (zero) = cell empty, 1 = X, 2 = O (letter 'O')
     private boolean _againstComputer = false;
     private int _screenWidth;
     private int _cellSide;
+    private AppCompatActivity _activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +38,12 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
         AdRequest requestTop = new AdRequest.Builder().build();
         adViewTop.loadAd(requestTop);
 
+        _activity = this;
+
         Point size = new Point();
         getWindowManager().getDefaultDisplay().getSize(size);
         _screenWidth = size.x;
-        _cellSide = _screenWidth / 3;
+        _cellSide = _screenWidth / 9;
 
         _againstComputer = getIntent().getIntExtra(MainActivity.AgainstComputerParamName, 1) == 1 ? false : true;
         _mainGridLayout = findViewById(R.id.mainGridLayout);
@@ -47,6 +51,8 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void setupGame() {
+        _currentPlayer = true;
+        _movesCounter = 9;
         setupGameBoard();
         setupTextViews();
     }
@@ -65,10 +71,8 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
             TextView child = (TextView)_mainGridLayout.getChildAt(index);
             if (!child.hasOnClickListeners()) {
                 child.setOnClickListener(this);
-                GridLayout.LayoutParams p = new GridLayout.LayoutParams();
-                p.width = _cellSide - 20;
-                p.height = _cellSide - 20;
-                child.setLayoutParams(p);
+                child.setWidth(_cellSide);
+                child.setHeight(_cellSide);
             }
             child.setText("");
         }
@@ -79,42 +83,79 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
 
         MakeMove(view);
 
-        boolean isGameOver = checkWinState();
-        if (!isGameOver){
+        boolean isWinState = checkWinState();
+        if (!isWinState){
+            if (_movesCounter == 0){
+                _movesCounter = 9;
+                showTieDialog();
+                return;
+            }
+
             if (_againstComputer){
                 //TODO: if computer then make next move
-                Toast.makeText(this, "Not impl. yet", Toast.LENGTH_LONG).show();
+                Toast.makeText(_activity, "Not impl. yet", Toast.LENGTH_LONG).show();
             }else{
                 return;
             }
         }
         else{
-            //TODO: show win/loss/tie dialog
-            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(R.string.gameOver);
-            final String[] items = new String[]{
-                    getString(R.string.newGame),
-                    getString(R.string.backButton)
-            };
-            builder.setItems(items, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    String selection = Arrays.asList(items).get(i);
-
-                    if (selection.equals(getString(R.string.newGame))){
-                        setupGame();
-                    }
-                    if (selection.equals(getString(R.string.backButton))){
-                        finish();
-                    }
-                }
-            });
-
-            builder.create().show();
+            showWinLossDialog();
         }
     }
 
+    private void showWinLossDialog() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        _currentPlayer = !_currentPlayer;
+        String winningPlayer = _currentPlayer ? "X" : "O";
+        String title = getString(R.string.playerWon).replace("[PLAYERNAME]", winningPlayer);
+        builder.setTitle(title);
+        final String[] items = new String[]{
+                getString(R.string.newGame),
+                getString(R.string.backButton)
+        };
+        builder.setItems(items, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                String selection = Arrays.asList(items).get(i);
+
+                if (selection.equals(getString(R.string.newGame))){
+                    setupGame();
+                }
+                if (selection.equals(getString(R.string.backButton))){
+                    finish();
+                }
+            }
+        });
+
+        builder.create().show();
+    }
+
+    private void showTieDialog() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.gameOver);
+        final String[] items = new String[]{
+                getString(R.string.newGame),
+                getString(R.string.backButton)
+        };
+        builder.setItems(items, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                String selection = Arrays.asList(items).get(i);
+
+                if (selection.equals(getString(R.string.newGame))){
+                    setupGame();
+                }
+                if (selection.equals(getString(R.string.backButton))){
+                    finish();
+                }
+            }
+        });
+
+        builder.create().show();
+    }
+
     private void MakeMove(View view) {
+        _movesCounter--;
         TextView currentTextView = (TextView)view;
         if (_currentPlayer){
             currentTextView.setText("X");
