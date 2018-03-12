@@ -20,18 +20,19 @@
             android:text="@string/humanPlayer"/>
 
         <Button
-            android:id="@+id/computerPlayer"
+            android:id="@+id/easyComputerPlayer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
-            android:text="@string/computerPlayer"/>
-    </LinearLayout>
+            android:text="@string/easyComputerPlayer"/>
 
-    <Button
-        android:id="@+id/loadGame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/load"/>
+        <Button
+            android:id="@+id/hardComputerPlayer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/hardComputerPlayer"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/gameSettings"

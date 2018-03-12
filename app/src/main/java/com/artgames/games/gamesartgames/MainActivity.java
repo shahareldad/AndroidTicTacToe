@@ -27,6 +27,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     public static String AgainstComputerParamName = "AgainstComputer";
+    public static String ComputerPlayerLevel = "ComputerPlayerLevel";
     public static String SETTINGS_FILENAME = "SUDOKU_SETTINGS";
     private SettingsData _settings;
 
@@ -46,20 +47,28 @@ public class MainActivity extends AppCompatActivity {
         adViewBottom.loadAd(requestBottom);
 
         Button humanBtn = findViewById(R.id.humanPlayer);
-        Button computerBtn = findViewById(R.id.computerPlayer);
+        Button easyComputerBtn = findViewById(R.id.easyComputerPlayer);
+        Button hardComputerBtn = findViewById(R.id.hardComputerPlayer);
         Button gameSettings = findViewById(R.id.gameSettings);
 
         humanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startNewGameByLevel(1);
+                startNewGameByLevel(false, 1);
             }
         });
 
-        computerBtn.setOnClickListener(new View.OnClickListener() {
+        easyComputerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startNewGameByLevel(2);
+                startNewGameByLevel(true, 1);
+            }
+        });
+
+        hardComputerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNewGameByLevel(true, 2);
             }
         });
 
@@ -83,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setMultiChoiceItems(items, checked, new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int indexSelected, boolean isChecked) {
-                        UpdateSettingssData(indexSelected, isChecked, items, settings);
+                        UpdateSettingsData(indexSelected, isChecked, items, settings);
                     }
                 });
                 builder.setPositiveButton(R.string.okButton, new DialogInterface.OnClickListener() {
@@ -168,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void UpdateSettingssData(int indexSelected, boolean isChecked, String[] items, SettingsData settings) {
+    private void UpdateSettingsData(int indexSelected, boolean isChecked, String[] items, SettingsData settings) {
         String selection = Arrays.asList(items).get(indexSelected);
         if (selection.equals(getString(R.string.playSounds))){
             settings.setPlaySound(isChecked);
@@ -178,9 +187,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void startNewGameByLevel(int level) {
+    private void startNewGameByLevel(boolean isAgainstComputer, int level) {
         Intent i = new Intent(MainActivity.this, BoardActivity.class);
-        i.putExtra(AgainstComputerParamName, level);
+        i.putExtra(AgainstComputerParamName, isAgainstComputer);
+        i.putExtra(ComputerPlayerLevel, level);
         startActivity(i);
     }
 }
