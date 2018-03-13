@@ -17,13 +17,18 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.reward.RewardItem;
+import com.google.android.gms.ads.reward.RewardedVideoAd;
+import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 import java.util.Arrays;
 
-public class BoardActivity extends AppCompatActivity implements View.OnClickListener{
+public class BoardActivity extends AppCompatActivity implements View.OnClickListener, RewardedVideoAdListener {
 
+    private static final int DEBUG_MODE = 1;
     private String TAG = "BoardActivity";
 
+    private static int _videoAdCounter = 10;
     private int _movesCounter = 9;
     private GridLayout _mainGridLayout;
     private boolean _currentPlayer = true; // true => X, false => O
@@ -36,17 +41,22 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     private TextView _OPlayerScore;
     private boolean _playSound;
     private boolean _confirmExit;
+    private RewardedVideoAd mRewardedVideoAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board);
 
-        MobileAds.initialize(this, "ca-app-pub-8402023979328526~3171238260");
+        MobileAds.initialize(this, "ca-app-pub-8402023979328526~6177870434");
 
         AdView adViewTop = findViewById(R.id.adGameViewBottom);
         AdRequest requestTop = new AdRequest.Builder().build();
         adViewTop.loadAd(requestTop);
+
+        mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
+        mRewardedVideoAd.setRewardedVideoAdListener(this);
+        loadRewardedVideoAd();
 
         Point size = new Point();
         getWindowManager().getDefaultDisplay().getSize(size);
@@ -113,6 +123,73 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
         else{
             showWinLossDialog();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        showExitConfirmationDialog();
+    }
+
+    @Override
+    protected void onResume() {
+        mRewardedVideoAd.resume(this);
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        mRewardedVideoAd.pause(this);
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        mRewardedVideoAd.destroy(this);
+        super.onDestroy();
+    }
+
+    private void ShowVideoAd() {
+        if (mRewardedVideoAd.isLoaded()) {
+            mRewardedVideoAd.show();
+        }else{
+            loadRewardedVideoAd();
+            if (mRewardedVideoAd.isLoaded()) {
+                mRewardedVideoAd.show();
+            }
+        }
+    }
+
+    private void loadRewardedVideoAd() {
+        if (DEBUG_MODE == 1){
+            mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917",
+                    new AdRequest.Builder().build());
+        }else{
+            mRewardedVideoAd.loadAd("ca-app-pub-8402023979328526/7221119671",
+                    new AdRequest.Builder().build());
+        }
+    }
+
+    private void showExitConfirmationDialog() {
+        if (!_confirmExit) {
+            super.onBackPressed();
+            return;
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setPositiveButton(R.string.yesOption, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        builder.setNegativeButton(R.string.noOption, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        builder.setTitle(R.string.exitConfirm);
+        builder.create().show();
     }
 
     private void makeComputerMove() {
@@ -210,6 +287,14 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
         });
 
         builder.create().show();
+
+        if (_videoAdCounter == 0){
+            _videoAdCounter = 10;
+            ShowVideoAd();
+        }
+        else{
+            _videoAdCounter--;
+        }
     }
 
     private void updateScoreForWinner() {
@@ -290,5 +375,40 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
             result[i] = Arrays.copyOf(original[i], original[i].length);
         }
         return result;
+    }
+
+    @Override
+    public void onRewardedVideoAdLoaded() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdOpened() {
+
+    }
+
+    @Override
+    public void onRewardedVideoStarted() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdClosed() {
+        loadRewardedVideoAd();
+    }
+
+    @Override
+    public void onRewarded(RewardItem rewardItem) {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdLeftApplication() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdFailedToLoad(int i) {
+        loadRewardedVideoAd();
     }
 }

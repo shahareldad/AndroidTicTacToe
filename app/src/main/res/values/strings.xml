@@ -13,4 +13,7 @@
     <string name="playerWon">Player [PLAYERNAME] won</string>
     <string name="playerX"><u>Player X</u></string>
     <string name="playerO"><u>Player O</u></string>
+    <string name="exitConfirm">Are you sure you want to exit?</string>
+    <string name="yesOption">Yes</string>
+    <string name="noOption">No</string>
 </resources>

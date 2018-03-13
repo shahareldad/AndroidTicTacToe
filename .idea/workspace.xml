@@ -12,14 +12,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,11 +45,18 @@
       <file leaf-file-name="BoardActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="73" column="35" lean-forward="false" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+            <state relative-caret-position="286">
+              <caret line="400" column="50" lean-forward="false" selection-start-line="400" selection-start-column="50" selection-end-line="400" selection-end-column="50" />
               <folding>
-                <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+                <element signature="class#5951:6107" expanded="false" />
+                <element signature="method#onClick#0;class#5951:6107" expanded="false" />
                 <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -58,25 +64,46 @@
                 <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-                <element signature="e#7101#7163#0" expanded="false" />
+                <element signature="e#9618#9680#0" expanded="false" />
                 <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
                 <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java">
+      <file leaf-file-name="activity_board.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="500">
+              <caret line="173" column="64" lean-forward="false" selection-start-line="173" selection-start-column="64" selection-end-line="173" selection-end-column="64" />
               <folding>
-                <element signature="method#LoadSettingsData#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#SaveSettingsData#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#UpdateSettingsData#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#396#1452#0" expanded="false" />
+                <element signature="e#567#777#0" expanded="false" />
+                <element signature="e#786#996#0" expanded="false" />
+                <element signature="e#1005#1215#0" expanded="false" />
+                <element signature="e#1224#1434#0" expanded="false" />
+                <element signature="e#1458#5194#0" expanded="false" />
+                <element signature="e#1684#2060#0" expanded="false" />
+                <element signature="e#2070#2448#0" expanded="false" />
+                <element signature="e#2458#2835#0" expanded="false" />
+                <element signature="e#2845#3224#0" expanded="false" />
+                <element signature="e#3234#3615#0" expanded="false" />
+                <element signature="e#3625#4005#0" expanded="false" />
+                <element signature="e#4015#4394#0" expanded="false" />
+                <element signature="e#4404#4785#0" expanded="false" />
+                <element signature="e#4795#5175#0" expanded="false" />
+                <element signature="e#5200#5377#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1876,9 +1903,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerTableLookup.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java" />
       </list>
     </option>
@@ -1922,6 +1949,24 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicTacToe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1937,7 +1982,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="raw" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2078,7 +2123,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520926825521" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520928188374" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2126,7 +2171,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520926825521" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520928188374" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2309,7 +2354,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520926825523" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520928188376" />
       </method>
     </configuration>
     <list size="1">
@@ -2387,17 +2432,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.51492536" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2419,7 +2465,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.48507464" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2438,8 +2483,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2447,11 +2499,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2476,8 +2533,15 @@
         <state relative-caret-position="4220">
           <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2485,11 +2549,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2514,8 +2583,15 @@
         <state relative-caret-position="1020">
           <caret line="86" column="81" lean-forward="false" selection-start-line="86" selection-start-column="81" selection-end-line="86" selection-end-column="81" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2523,11 +2599,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2559,8 +2640,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2568,11 +2656,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2597,8 +2690,15 @@
         <state relative-caret-position="1100">
           <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2606,11 +2706,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2623,6 +2728,11 @@
         <state relative-caret-position="2340">
           <caret line="117" column="46" lean-forward="false" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
           <folding>
+            <element signature="e#396#1452#0" expanded="false" />
+            <element signature="e#567#777#0" expanded="false" />
+            <element signature="e#786#996#0" expanded="false" />
+            <element signature="e#1005#1215#0" expanded="false" />
+            <element signature="e#1224#1434#0" expanded="false" />
             <element signature="e#1458#5194#0" expanded="false" />
             <element signature="e#1684#2060#0" expanded="false" />
             <element signature="e#2070#2448#0" expanded="false" />
@@ -2633,7 +2743,7 @@
             <element signature="e#4015#4394#0" expanded="false" />
             <element signature="e#4404#4785#0" expanded="false" />
             <element signature="e#4795#5175#0" expanded="false" />
-            <element signature="e#5383#5934#0" expanded="false" />
+            <element signature="e#5200#5377#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2643,8 +2753,15 @@
         <state relative-caret-position="840">
           <caret line="72" column="80" lean-forward="false" selection-start-line="72" selection-start-column="80" selection-end-line="72" selection-end-column="80" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2652,11 +2769,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2686,8 +2808,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2695,11 +2824,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2709,8 +2843,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2718,11 +2859,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2732,8 +2878,15 @@
         <state relative-caret-position="80">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -2741,11 +2894,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2758,6 +2916,11 @@
         <state relative-caret-position="280">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
+            <element signature="e#396#1452#0" expanded="false" />
+            <element signature="e#567#777#0" expanded="false" />
+            <element signature="e#786#996#0" expanded="false" />
+            <element signature="e#1005#1215#0" expanded="false" />
+            <element signature="e#1224#1434#0" expanded="false" />
             <element signature="e#1458#5194#0" expanded="false" />
             <element signature="e#1684#2060#0" expanded="false" />
             <element signature="e#2070#2448#0" expanded="false" />
@@ -2768,7 +2931,7 @@
             <element signature="e#4015#4394#0" expanded="false" />
             <element signature="e#4404#4785#0" expanded="false" />
             <element signature="e#4795#5175#0" expanded="false" />
-            <element signature="e#5383#5934#0" expanded="false" />
+            <element signature="e#5200#5377#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2948,14 +3111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2965,29 +3120,6 @@
       </provider>
       <provider editor-type-id="android-manifest">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="e#1458#5194#0" expanded="false" />
-            <element signature="e#1684#2060#0" expanded="false" />
-            <element signature="e#2070#2448#0" expanded="false" />
-            <element signature="e#2458#2835#0" expanded="false" />
-            <element signature="e#2845#3224#0" expanded="false" />
-            <element signature="e#3234#3615#0" expanded="false" />
-            <element signature="e#3625#4005#0" expanded="false" />
-            <element signature="e#4015#4394#0" expanded="false" />
-            <element signature="e#4404#4785#0" expanded="false" />
-            <element signature="e#4795#5175#0" expanded="false" />
-            <element signature="e#5383#5934#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java">
@@ -3002,13 +3134,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="173" column="64" lean-forward="false" selection-start-line="173" selection-start-column="64" selection-end-line="173" selection-end-column="64" />
+          <folding>
+            <element signature="e#396#1452#0" expanded="false" />
+            <element signature="e#567#777#0" expanded="false" />
+            <element signature="e#786#996#0" expanded="false" />
+            <element signature="e#1005#1215#0" expanded="false" />
+            <element signature="e#1224#1434#0" expanded="false" />
+            <element signature="e#1458#5194#0" expanded="false" />
+            <element signature="e#1684#2060#0" expanded="false" />
+            <element signature="e#2070#2448#0" expanded="false" />
+            <element signature="e#2458#2835#0" expanded="false" />
+            <element signature="e#2845#3224#0" expanded="false" />
+            <element signature="e#3234#3615#0" expanded="false" />
+            <element signature="e#3625#4005#0" expanded="false" />
+            <element signature="e#4015#4394#0" expanded="false" />
+            <element signature="e#4404#4785#0" expanded="false" />
+            <element signature="e#4795#5175#0" expanded="false" />
+            <element signature="e#5200#5377#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="73" column="35" lean-forward="false" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+        <state relative-caret-position="286">
+          <caret line="400" column="50" lean-forward="false" selection-start-line="400" selection-start-column="50" selection-end-line="400" selection-end-column="50" />
           <folding>
-            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#ShowVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#loadRewardedVideoAd#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showExitConfirmationDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="class#5951:6107" expanded="false" />
+            <element signature="method#onClick#0;class#5951:6107" expanded="false" />
             <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
@@ -3016,11 +3191,16 @@
             <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
-            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="e#9618#9680#0" expanded="false" />
             <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
             <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLoaded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdOpened#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoStarted#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewarded#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onRewardedVideoAdLeftApplication#0;class#BoardActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
