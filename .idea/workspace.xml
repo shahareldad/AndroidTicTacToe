@@ -7,7 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="4c231fcd-1d45-4579-8cef-b70e6144b4eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TicTacToe.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,13 +42,42 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="BoardActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="73" column="35" lean-forward="false" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+              <folding>
+                <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+                <element signature="e#7101#7163#0" expanded="false" />
+                <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+                <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="40" />
+              <folding>
+                <element signature="method#LoadSettingsData#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#SaveSettingsData#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#UpdateSettingsData#0;class#MainActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +88,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +98,26 @@
     <findStrings>
       <find>SameNumber</find>
       <find>hard</find>
+      <find>okButton</find>
+      <find>load</find>
+      <find>easy</find>
+      <find>android.support.v7.widget.AppCompat</find>
+      <find>3</find>
+      <find>AgainstComputerParamName</find>
+      <find>mySeed</find>
+      <find>reboard</find>
+      <find>9</find>
+      <find>*</find>
+      <find>_activity</find>
+      <find>_gameBoard</find>
+      <find>GameMain.COLS * GameMain.ROWS</find>
+      <find>_XPlayerScore</find>
+      <find>ComputerPlayerLevel</find>
     </findStrings>
+    <replaceStrings>
+      <replace>boardCopy</replace>
+      <replace>9</replace>
+    </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -1793,15 +1854,11 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/SettingsData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Board.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MoveObserver.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Player.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/RandomPlayer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Engine.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/EngineObserver.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/cell_top_left.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/cell_top_middle.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/cell_top_right.xml" />
@@ -1813,7 +1870,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/cell_bottom_left.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/white_color.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/GameMain.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Seed.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerMinimax.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerTableLookup.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java" />
       </list>
     </option>
@@ -1846,7 +1911,21 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GamesArt" />
+              <option name="myItemId" value="TicTacToe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicTacToe" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1858,63 +1937,13 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="raw" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GamesArt" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamesArt" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamesArt" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamesArt" />
+              <option name="myItemId" value="TicTacToe" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1924,7 +1953,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GamesArt" />
+              <option name="myItemId" value="TicTacToe" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1942,19 +1971,23 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="android.sdk.path" value="C:/Android/android-sdk" />
-    <property name="device.picker.selection" value="338bd1b40404" />
+    <property name="device.picker.selection" value="0123456789ABCDEF" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.artgames.games.gamesartgames" />
+    </key>
     <key name="android.template.packageName">
       <recent name="com.artgames.games.gamesartgames" />
     </key>
@@ -2045,7 +2078,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520509869945" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520926825521" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2093,7 +2126,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520509869945" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520926825521" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2125,6 +2158,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -2255,7 +2309,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520509869947" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520926825523" />
       </method>
     </configuration>
     <list size="1">
@@ -2294,6 +2348,14 @@
           <option name="myVcsRoot" value="C:\Users\shaharel\AndroidStudioProjects\TicTacToe" />
           <option name="myCopyRoot" value="C:\Users\shaharel\AndroidStudioProjects\TicTacToe" />
         </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\shaharel\AndroidStudioProjects\TicTacToe\.idea" />
+          <option name="myCopyRoot" value="C:\Users\shaharel\AndroidStudioProjects\TicTacToe\.idea" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\shaharel\AndroidStudioProjects\TicTacToe\app" />
+          <option name="myCopyRoot" value="C:\Users\shaharel\AndroidStudioProjects\TicTacToe\app" />
+        </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
@@ -2315,19 +2377,28 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.51492536" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2340,7 +2411,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.48933902" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2349,7 +2420,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.48507464" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2357,14 +2428,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java</url>
-          <line>38</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2373,7 +2437,293 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerTableLookup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+          <folding>
+            <element signature="docComment;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#AIPlayerTableLookup#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkSecondPlayerNextMoveWin#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#AIPlayerTableLookup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4220">
+          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerTableLookup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding>
+            <element signature="docComment;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#AIPlayerTableLookup#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkSecondPlayerNextMoveWin#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#AIPlayerTableLookup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="86" column="81" lean-forward="false" selection-start-line="86" selection-start-column="81" selection-end-line="86" selection-end-column="81" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <folding>
+            <element signature="method#LoadSettingsData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#SaveSettingsData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#UpdateSettingsData#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerTableLookup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="docComment;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#AIPlayerTableLookup#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkSecondPlayerNextMoveWin#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#AIPlayerTableLookup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="117" column="46" lean-forward="false" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
+          <folding>
+            <element signature="e#1458#5194#0" expanded="false" />
+            <element signature="e#1684#2060#0" expanded="false" />
+            <element signature="e#2070#2448#0" expanded="false" />
+            <element signature="e#2458#2835#0" expanded="false" />
+            <element signature="e#2845#3224#0" expanded="false" />
+            <element signature="e#3234#3615#0" expanded="false" />
+            <element signature="e#3625#4005#0" expanded="false" />
+            <element signature="e#4015#4394#0" expanded="false" />
+            <element signature="e#4404#4785#0" expanded="false" />
+            <element signature="e#4795#5175#0" expanded="false" />
+            <element signature="e#5383#5934#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="72" column="80" lean-forward="false" selection-start-line="72" selection-start-column="80" selection-end-line="72" selection-end-column="80" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3500">
+          <caret line="175" column="61" lean-forward="false" selection-start-line="175" selection-start-column="61" selection-end-line="175" selection-end-column="61" />
+          <folding>
+            <element signature="method#LoadSettingsData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#SaveSettingsData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#UpdateSettingsData#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2381,7 +2731,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2392,7 +2757,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1458#5194#0" expanded="false" />
+            <element signature="e#1684#2060#0" expanded="false" />
+            <element signature="e#2070#2448#0" expanded="false" />
+            <element signature="e#2458#2835#0" expanded="false" />
+            <element signature="e#2845#3224#0" expanded="false" />
+            <element signature="e#3234#3615#0" expanded="false" />
+            <element signature="e#3625#4005#0" expanded="false" />
+            <element signature="e#4015#4394#0" expanded="false" />
+            <element signature="e#4404#4785#0" expanded="false" />
+            <element signature="e#4795#5175#0" expanded="false" />
+            <element signature="e#5383#5934#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2407,13 +2784,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MoveObserver.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Board.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayer.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/EngineObserver.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Player.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/RandomPlayer.java" />
@@ -2425,31 +2800,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Engine.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/cell_top_left.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2525,22 +2875,153 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/white_color.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/Seed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/GameMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Android/android-sdk/platforms/android-26/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerMinimax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-560">
+          <caret line="127" column="49" lean-forward="false" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/AIPlayerTableLookup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+          <folding>
+            <element signature="docComment;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#AIPlayerTableLookup#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#move#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkSecondPlayerNextMoveWin#0;class#AIPlayerTableLookup#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#AIPlayerTableLookup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#355#1291#0" expanded="false" />
+            <element signature="e#548#773#0" expanded="false" />
+            <element signature="e#783#1022#0" expanded="false" />
+            <element signature="e#1032#1271#0" expanded="false" />
+            <element signature="e#1297#1474#0" expanded="false" />
+            <element signature="e#1480#1997#0" expanded="false" />
+            <element signature="e#2003#2513#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="200">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#1458#5194#0" expanded="false" />
+            <element signature="e#1684#2060#0" expanded="false" />
+            <element signature="e#2070#2448#0" expanded="false" />
+            <element signature="e#2458#2835#0" expanded="false" />
+            <element signature="e#2845#3224#0" expanded="false" />
+            <element signature="e#3234#3615#0" expanded="false" />
+            <element signature="e#3625#4005#0" expanded="false" />
+            <element signature="e#4015#4394#0" expanded="false" />
+            <element signature="e#4404#4785#0" expanded="false" />
+            <element signature="e#4795#5175#0" expanded="false" />
+            <element signature="e#5383#5934#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="method#LoadSettingsData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#SaveSettingsData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#UpdateSettingsData#0;class#MainActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artgames/games/gamesartgames/BoardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="73" column="35" lean-forward="false" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding>
+            <element signature="method#onCreate#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeComputerMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGame#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#resetScore#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupGameBoard#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#setupTextViews#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#showWinLossDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#updateScoreForWinner#0;class#BoardActivity#0" expanded="false" />
+            <element signature="e#7101#7163#0" expanded="false" />
+            <element signature="method#showTieDialog#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#makeMove#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#checkWinState#0;class#BoardActivity#0" expanded="false" />
+            <element signature="method#deepCopy#0;class#BoardActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
