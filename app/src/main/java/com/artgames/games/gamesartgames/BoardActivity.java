@@ -25,7 +25,7 @@ import java.util.Arrays;
 
 public class BoardActivity extends AppCompatActivity implements View.OnClickListener, RewardedVideoAdListener {
 
-    private static final int DEBUG_MODE = 1;
+    private static final int DEBUG_MODE = 0;
     private String TAG = "BoardActivity";
 
     private static int _videoAdCounter = 10;

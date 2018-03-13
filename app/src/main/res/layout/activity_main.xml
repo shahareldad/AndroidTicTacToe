@@ -48,8 +48,8 @@
         android:layout_centerHorizontal="true"
         ads:adSize="MEDIUM_RECTANGLE"
         android:layout_marginTop="5dp"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-        <!--ads:adUnitId="ca-app-pub-8402023979328526/7098810682">-->
+        ads:adUnitId="ca-app-pub-8402023979328526/7098810682">
+        <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
     </com.google.android.gms.ads.AdView>
 
     <com.google.android.gms.ads.AdView
@@ -60,8 +60,8 @@
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
         android:layout_marginTop="5dp"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-        <!--ads:adUnitId="ca-app-pub-8402023979328526/6046417612">-->
+        ads:adUnitId="ca-app-pub-8402023979328526/6046417612">
+        <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
     </com.google.android.gms.ads.AdView>
 
 </LinearLayout>
