@@ -47,6 +47,7 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         MobileAds.initialize(this, "ca-app-pub-8402023979328526~6177870434");
 
