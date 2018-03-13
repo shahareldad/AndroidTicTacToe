@@ -2,9 +2,12 @@ package com.artgames.games.gamesartgames;
 
 import android.content.DialogInterface;
 import android.graphics.Point;
+import android.media.MediaPlayer;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
@@ -19,17 +22,20 @@ import java.util.Arrays;
 
 public class BoardActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private String TAG = "BoardActivity";
+
     private int _movesCounter = 9;
     private GridLayout _mainGridLayout;
     private boolean _currentPlayer = true; // true => X, false => O
     private int[][] _gameBoard = new int[GameMain.ROWS][GameMain.COLS]; // 0 (zero) = cell empty, 1 = X, 2 = O (letter 'O')
     private TextView[][] _textViews = new TextView[GameMain.ROWS][GameMain.COLS];
     private boolean _againstComputer = false;
-    private int _screenWidth;
     private int _cellSide;
     private int _level = 1;
     private TextView _XPlayerScore;
     private TextView _OPlayerScore;
+    private boolean _playSound;
+    private boolean _confirmExit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +50,11 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
 
         Point size = new Point();
         getWindowManager().getDefaultDisplay().getSize(size);
-        _screenWidth = size.x;
+        int _screenWidth = size.x;
         _cellSide = _screenWidth / 9;
 
+        _playSound = getIntent().getBooleanExtra(MainActivity.PlaySounds, true);
+        _confirmExit = getIntent().getBooleanExtra(MainActivity.ConfirmExitGame, true);
         _againstComputer = getIntent().getBooleanExtra(MainActivity.AgainstComputerParamName, false);
         _level = getIntent().getIntExtra(MainActivity.ComputerPlayerLevel, 1);
         _mainGridLayout = findViewById(R.id.mainGridLayout);
@@ -65,6 +73,16 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
 
+        if (_playSound){
+            MediaPlayer ring= MediaPlayer.create(BoardActivity.this, R.raw.click_sound);
+            ring.start();
+            try{
+                Thread.sleep(100);
+            }catch (InterruptedException ex){
+                Log.e(TAG, ex.getMessage());
+            }
+        }
+
         TextView cell = (TextView)view;
         String textViewText = String.valueOf(cell.getText());
         if (!textViewText.equals(""))
@@ -81,7 +99,13 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
             }
 
             if (_againstComputer){
-                makeComputerMove();
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        makeComputerMove();
+                    }
+                }, 100);
             }else{
                 return;
             }

@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static String AgainstComputerParamName = "AgainstComputer";
     public static String ComputerPlayerLevel = "ComputerPlayerLevel";
+    public static String PlaySounds = "PlayClickSound";
+    public static String ConfirmExitGame = "ConfirmExitGame";
     public static String SETTINGS_FILENAME = "SUDOKU_SETTINGS";
     private SettingsData _settings;
 
@@ -191,6 +193,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, BoardActivity.class);
         i.putExtra(AgainstComputerParamName, isAgainstComputer);
         i.putExtra(ComputerPlayerLevel, level);
+        i.putExtra(PlaySounds, _settings.getPlaySound());
+        i.putExtra(ConfirmExitGame, _settings.getConfirmExit());
         startActivity(i);
     }
 }
