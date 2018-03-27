@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">איקס עיגול</string>
+    <string name="humanPlayer">2 שחקנים</string>
+    <string name="easyComputerPlayer">קל</string>
+    <string name="hardComputerPlayer">קשה</string>
+    <string name="settings">הגדרות</string>
+    <string name="playSounds">צלילים</string>
+    <string name="confirmOnExit">אשר יציאה</string>
+    <string name="okButton">אישור</string>
+    <string name="backButton">אחורה</string>
+    <string name="gameOver">המשחק נגמר</string>
+    <string name="newGame">משחק חדש</string>
+    <string name="playerWon">שחקן [PLAYERNAME] ניצח</string>
+    <string name="playerX"><u>שחקן X</u></string>
+    <string name="playerO"><u>שחקן O</u></string>
+    <string name="exitConfirm">האם אתה בטוח רוצה לצאת?</string>
+    <string name="yesOption">כן</string>
+    <string name="noOption">לא</string>
+</resources>
