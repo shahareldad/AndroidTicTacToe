@@ -1,9 +1,14 @@
 package com.artgames.games.gamesartgames;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Point;
 import android.media.MediaPlayer;
+import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,7 +29,7 @@ import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 import java.util.Arrays;
 
-public class BoardActivity extends AppCompatActivity implements View.OnClickListener, RewardedVideoAdListener {
+public class BoardActivity extends AppCompatActivity implements View.OnClickListener, DeviceActionListener, RewardedVideoAdListener {
 
     private static final int DEBUG_MODE = 0;
     private String TAG = "BoardActivity";
@@ -43,6 +48,10 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     private boolean _playSound;
     private boolean _confirmExit;
     private RewardedVideoAd mRewardedVideoAd;
+    private final IntentFilter intentFilter = new IntentFilter();
+    private WifiP2pManager.Channel _channel;
+    private WifiP2pManager _manager;
+    private WiFiBroadcastReceiver _receiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +89,16 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
                 setupGame();
             }
         });
+
+        if (!_againstComputer){
+            intentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
+            intentFilter.addAction(WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION);
+            intentFilter.addAction(WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION);
+            intentFilter.addAction(WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION);
+
+            _manager = (WifiP2pManager)getSystemService(Context.WIFI_P2P_SERVICE);
+            _channel = _manager.initialize(this, Looper.getMainLooper(), null);
+        }
     }
 
     @Override
@@ -136,12 +155,15 @@ public class BoardActivity extends AppCompatActivity implements View.OnClickList
     protected void onResume() {
         mRewardedVideoAd.resume(this);
         super.onResume();
+        _receiver = new WiFiBroadcastReceiver(_manager, _channel, this);
+        registerReceiver(_receiver, intentFilter);
     }
 
     @Override
     protected void onPause() {
         mRewardedVideoAd.pause(this);
         super.onPause();
+        unregisterReceiver(_receiver, intentFilter);
     }
 
     @Override
